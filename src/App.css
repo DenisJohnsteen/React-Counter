@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  font-family: "Montserra", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #e5e5e5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 1140px;
+  height: 800px;
+  margin: 0 auto;
+  background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  width: 100%;
+  height: 92px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+}
+
+header i {
+  color: #5c48d3;
+  padding: 0px 100px;
+}
+
+header h1 {
+  font-size: 48px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 708px;
+}
+
+.containerReset {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.containerReset button {
+  border: none;
+  background-color: #5c48d3;
+  /* color: white; */
+  height: 60px;
+  width: 150px;
+  border-radius: 15px;
+}
+
+.buttonResetColor p {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.containerButton {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid red; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.containerButton button {
+  height: 50px;
+  width: 50px;
+  border: none;
+  font-weight: bold;
+  font-size: 50px;
+  background-color: white;
+}
+
+.containerButton p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  height: 100px;
+  width: 100px;
+  background-color: #5c48d3;
+  border-radius: 10px;
+  color: white;
+}
+
+.buttonResetColor button {
+  color: white;
+  font-size: 20px;
+}
+
+footer {
+  height: 72px;
+  background-color: white;
+}
+
+footer p {
+  font-size: 15px;
+  text-align: center;
+}
+
+footer span {
+  font-weight: bold;
 }
